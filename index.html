@@ -1,89 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulário</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h2>Formulário</h2>
+<header>
+    <div class="container">
+        <h1>Meu Site Incrível</h1>
+        <div class="nav-bar">
+            <a href="#" class="home-btn">Home</a>
+        </div>
+    </div>
+</header>
 
-<form action="https://www.w3schools.com/action_page.php" method="post">
-  <label for="data">Data:</label><br>
-  <input type="date" id="data" name="data"><br><br>
-  
-  <fieldset>
-    <legend>Dados de Acesso</legend>
-    <label for="usuario">Usuário:</label><br>
-    <input type="text" id="usuario" name="usuario"><br><br>
-    <label for="senha">Senha:</label><br>
-    <input type="password" id="senha" name="senha"><br><br>
-  </fieldset>
-  
-  <fieldset>
-    <legend>Dados Pessoais</legend>
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome"><br><br>
-    <label for="endereco">Endereço:</label><br>
-    <input type="text" id="endereco" name="endereco"><br><br>
-    <label for="numero">Número:</label><br>
-    <input type="text" id="numero" name="numero"><br><br>
-    <label for="complemento">Complemento:</label><br>
-    <input type="text" id="complemento" name="complemento"><br><br>
-    <label for="cidade">Cidade:</label><br>
-    <input list="cidades" id="cidade" name="cidade">
-    <datalist id="cidades">
-      <option value="São Paulo">
-      <option value="Rio de Janeiro">
-      <option value="Belo Horizonte">
-      <option value="Salvador">
-    </datalist><br><br>
-    <label for="estado">Estado:</label><br>
-    <select id="estado" name="estado">
-      <option value="SP">São Paulo</option>
-      <option value="RJ">Rio de Janeiro</option>
-      <option value="MG">Minas Gerais</option>
-      <option value="BA">Bahia</option>
-    </select><br><br>
-    <label for="cep">CEP:</label><br>
-    <input type="text" id="cep" name="cep"><br><br>
-  </fieldset>
-  
-  <fieldset>
-    <legend>Gênero</legend>
-    <input type="radio" id="masculino" name="genero" value="masculino">
-    <label for="masculino">Masculino</label><br>
-    <input type="radio" id="feminino" name="genero" value="feminino">
-    <label for="feminino">Feminino</label><br>
-    <input type="radio" id="nao_falar" name="genero" value="nao_falar">
-    <label for="nao_falar">Prefiro não falar</label><br><br>
-  </fieldset>
-  
-  <fieldset>
-    <legend>Curso</legend>
-    <input type="checkbox" id="ads" name="curso[]" value="ADS">
-    <label for="ads">ADS</label><br>
-    <input type="checkbox" id="jogos" name="curso[]" value="Jogos">
-    <label for="jogos">Jogos</label><br>
-    <input type="checkbox" id="gestao_ti" name="curso[]" value="Gestão de TI">
-    <label for="gestao_ti">Gestão de TI</label><br>
-    <input type="checkbox" id="banco_dados" name="curso[]" value="Banco de Dados">
-    <label for="banco_dados">Banco de Dados</label><br><br>
-  </fieldset>
-  
-  <fieldset>
-    <legend>Modelo</legend>
-    <input type="radio" id="presencial" name="modelo" value="presencial">
-    <label for="presencial">Presencial</label><br>
-    <input type="radio" id="ead" name="modelo" value="ead">
-    <label for="ead">EAD</label><br>
-    <input type="radio" id="semi_presencial" name="modelo" value="semi_presencial">
-    <label for="semi_presencial">Semi presencial</label><br><br>
-  </fieldset>
-  
-  <input type="submit" value="Enviar">
-</form>
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <section class="box">
+            <h2>Sobre nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor lorem non sem fermentum, vitae feugiat libero maximus. Nullam euismod efficitur justo, vel suscipit risus. Donec sodales ante non elit consequat ultricies.</p>
+        </section>
+
+        <section class="box">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Desenvolvimento Web</li>
+                <li>Consultoria em TI</li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Minha Página. Todos os direitos reservados.</p>
+    </div>
+</footer>
 
 </body>
 </html>
